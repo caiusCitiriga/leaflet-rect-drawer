@@ -1,0 +1,10 @@
+<div style="height: 100%"
+     leaflet
+     [leafletOptions]="options"
+     (leafletMapReady)="onMapReady($event)">
+
+    <div leafletDraw
+         (leafletDrawReady)="onDrawReady($event)"
+         (leafletDrawCreated)="onDrawEnd($event)"
+         [leafletDrawOptions]="drawOptions"></div>
+</div>
